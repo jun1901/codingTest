@@ -18,7 +18,7 @@ public class Problem1986 {
                 result += (sw ? j : -j);
                 sw = !sw;
             }
-            System.out.printf("#%d %d", i, result);
+            System.out.printf("#%d %d\n", i, result);
 
         }
 
