@@ -16,7 +16,6 @@ public class Problem1979 {
             StringTokenizer st = new StringTokenizer(br.readLine());
             int N = Integer.parseInt(st.nextToken()), K = Integer.parseInt(st.nextToken()),result = 0,count = 0;
             boolean[][] input = new boolean[N][N];
-            System.out.printf("N=%d K=%d\n",N,K);
             for (int j = 0; j < N; j++) {
                 st = new StringTokenizer(br.readLine());
                 count = 0;
