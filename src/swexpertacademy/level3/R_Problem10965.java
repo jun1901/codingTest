@@ -12,7 +12,8 @@ public class R_Problem10965 {
 
         for (int i = 1; i <= T ; i++) {
             int A = Integer.parseInt(br.readLine()), B = 1;
-            while (Math.sqrt(A*B) != (int)Math.sqrt(A*B)) B++;
+            B = (int) (Math.pow(Math.ceil(Math.sqrt(A)),2)/A);
+            //while (Math.sqrt(A*B) != (int)Math.sqrt(A*B)) B++;
             sb.append("#"+i+" "+B+"\n");
         }
         System.out.println(sb);
