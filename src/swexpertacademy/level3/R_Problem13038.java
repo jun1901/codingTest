@@ -25,9 +25,11 @@ public class R_Problem13038 {
             System.out.println(s.charAt(n%count)-'0');
             System.out.println(s.charAt(1)-'1');
             System.out.println();
-            if(count == 1) sb.append("#"+i+" "+(7*n-6)+"\n");
-            else sb.append("#"+i+" "+(n/count*7+s.charAt(n%count)-s.charAt(1)+1)+"\n");
-
+            sb.append("#"+i+" ");
+            if(count == 1) sb.append(7*n-6);
+            else if(n <= count) sb.append(s.charAt(n)-s.charAt(1)+1);
+            else sb.append(n/count*7+s.charAt(n%count)-s.charAt(1)+1);
+            sb.append("\n");
         }
         System.out.print(sb);
     }
