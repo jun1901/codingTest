@@ -14,12 +14,13 @@ public class R_Problem13038 {
             int n = Integer.parseInt(br.readLine()), count = 0;
             String input = br.readLine().replaceAll(" ","");
             StringBuffer s = new StringBuffer();
-            s.append(0);
             for (int j = 0; j < input.length(); j++)
                 if(input.charAt(j)-'0' == 1) {
                     count++;
                     s.append(j+1);
                 }
+
+            s.insert(0,0);
             System.out.println(s);
             System.out.println(n/count*7);
             System.out.println(s.charAt(n%count)-'0');
