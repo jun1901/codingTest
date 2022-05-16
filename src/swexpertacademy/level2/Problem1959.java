@@ -14,7 +14,7 @@ public class Problem1959 {
 
         for (int i = 1; i <= T ; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int sum,max=0,k;
+            int sum,k,nl,ml,max=0;
             int[] nm = {Integer.parseInt(st.nextToken()),Integer.parseInt(st.nextToken())};
             ArrayList<Integer>[] input = new ArrayList[2];
             for (int j = 0; j < 2; j++) {
@@ -23,14 +23,16 @@ public class Problem1959 {
                 while (st.hasMoreTokens()) in.add(Integer.parseInt(st.nextToken()));
                 input[j] = in;
             }
-            for (int j = 0; j <= Math.abs(input[0].size() - input[1].size()); j++) {
+            nl = input[0].size();
+            ml = input[1].size();
+            for (int j = 0; j <= Math.abs(nl - ml); j++) {
                 sum = 0;
-                if(input[0].size()<input[1].size()){
-                    for (k = 0; k < input[0].size(); k++) sum += input[0].get(k)*input[1].get(k+j);
+                if(nl<ml){
+                    for (k = 0; k < nl; k++) sum += input[0].get(k)*input[1].get(k+j);
                     //System.out.println(max + " " + sum);
                     max = Math.max(max, sum);
                 } else{
-                    for (k = 0; k < input[1].size(); k++) sum += input[0].get(k+j)*input[1].get(k);
+                    for (k = 0; k < ml; k++) sum += input[0].get(k+j)*input[1].get(k);
                     //System.out.println(max + " " + sum);
                     max = Math.max(max, sum);
                 }
