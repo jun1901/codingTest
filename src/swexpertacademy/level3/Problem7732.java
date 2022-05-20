@@ -21,8 +21,8 @@ public class Problem7732 {
             if(t[1]<0){ t[1] += 60; t[0]--; }
             if(t[0]<0) t[0] += 24;
             //System.out.printf("#%d %02d:%02d:%02d\n",i,t[0],t[1],t[2]);
-            sb.append(String.format("#%d %02d:%02d:%02d\n",i,t[0],t[1],t[2]));
-            //sb.append("#"+i+" "+t[0]+":"+t[1]+":"+t[2]+"\n");
+            //sb.append(String.format("#%d %02d:%02d:%02d\n",i,t[0],t[1],t[2]));
+            sb.append("#"+i+" "+(t[0]<10?"0":"")+t[0]+":"+(t[1]<10?"0":"")+t[1]+":"+(t[2]<10?"0":"")+t[2]+"\n");
         }
         System.out.print(sb);
     }
