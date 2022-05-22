@@ -3,6 +3,7 @@ package swexpertacademy.level3;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class R_Problem10965 {
     public static void main(String[] args) throws IOException {
@@ -12,9 +13,11 @@ public class R_Problem10965 {
 
         for (int i = 1; i <= T ; i++) {
             int A = Integer.parseInt(br.readLine()), B = 1;
-            B = (int) (Math.pow(Math.ceil(Math.sqrt(A)),2)/A);
-            //while (Math.sqrt(A*B) != (int)Math.sqrt(A*B)) B++;
-            sb.append("#"+i+" "+B+"\n");
+
+
+
+
+            //sb.append("#"+i+" "+B+"\n");
         }
         System.out.println(sb);
 
