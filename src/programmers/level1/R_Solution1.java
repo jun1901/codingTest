@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class R_Solution3 { // 신고결과 받기 - https://programmers.co.kr/learn/courses/30/lessons/92334?language=java
+public class R_Solution1 { // 신고결과 받기 - https://programmers.co.kr/learn/courses/30/lessons/92334?language=java
     public static void main(String[] args) {
         String[] id_list = {"muzi", "frodo", "apeach", "neo"}, report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
         int k = 2;
